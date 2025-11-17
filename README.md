@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Lovable project
 
 ## Project info
@@ -71,3 +72,7 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+=======
+# Smart-Buy-crop
+Local Plant Marketplace with AI Soil Guidance is a farmer-friendly platform prototype designed to help farmers easily buy local agricultural plants—such as Areca, Coconut, Banana, and Pepper—and receive soil suitability recommendations through an AI chatbot.
+>>>>>>> 845e15ea1ccb6ad8f2449cc4bcf7d1ec3f5b3144
