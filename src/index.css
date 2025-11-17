@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 120 20% 98%;
+    --foreground: 140 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 30% 15%;
+
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 30% 92%;
+    --secondary-foreground: 140 30% 15%;
+
+    --muted: 120 20% 95%;
+    --muted-foreground: 140 20% 45%;
+
+    --accent: 142 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 20% 88%;
+    --input: 120 20% 88%;
+    --ring: 142 76% 36%;
+
+    --radius: 1rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 76%, 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(120, 40%, 96%), hsl(120, 20%, 98%));
+    --shadow-soft: 0 4px 20px -4px hsl(142, 76%, 36%, 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(142, 40%, 30%, 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 140 30% 8%;
+    --foreground: 120 20% 95%;
+
+    --card: 140 30% 10%;
+    --card-foreground: 120 20% 95%;
+
+    --popover: 140 30% 10%;
+    --popover-foreground: 120 20% 95%;
+
+    --primary: 142 76% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 20% 15%;
+    --secondary-foreground: 120 20% 95%;
+
+    --muted: 140 20% 15%;
+    --muted-foreground: 120 15% 65%;
+
+    --accent: 142 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 20% 20%;
+    --input: 140 20% 20%;
+    --ring: 142 76% 50%;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
